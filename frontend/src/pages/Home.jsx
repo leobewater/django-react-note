@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import api from '../api';
 import Note from '../components/Note'
+import "../styles/Home.css"
 
 function Home() {
   const [notes, setNotes] = useState([]);
@@ -24,7 +25,7 @@ function Home() {
 
   const deleteNote = (id) => {
     api
-      .delete(`/api/notes/delete/${id}`)
+      .delete(`/api/notes/delete/${id}/`)
       .then((res) => {
         if (res.status === 204) alert('Note deleted!');
         else alert('Failed to delete note!');
@@ -66,7 +67,7 @@ function Home() {
           onChange={(e) => setTitle(e.target.value)}
           value={title}
         />
-        <br />
+
         <label htmlFor='content'>Content:</label>
         <br />
         <textarea
