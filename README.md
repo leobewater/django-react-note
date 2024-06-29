@@ -32,3 +32,8 @@ http://127.0.0.1:8000/api/token/
 http://127.0.0.1:8000/api/token/refresh/
 http://127.0.0.1:8000/api/notes/
 http://127.0.0.1:8000/api/notes/delete/<id>
+
+
+// frontend react
+> npm create vite@latest frontend -- --template react
+> npm install axios react-router-dom jwt-decode
