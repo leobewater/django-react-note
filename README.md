@@ -16,3 +16,12 @@ video: https://www.youtube.com/watch?v=c-QsfbznSXI&t=795s&ab_channel=TechWithTim
 
 // create app
 > py manage.py startapp api
+
+// create migration files
+> py manage.py makemigrations
+
+// apply migrations
+> py manage.py migrate
+
+// run server
+> py manage.py runserver
